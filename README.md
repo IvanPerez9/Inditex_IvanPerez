@@ -3,7 +3,6 @@
 
 # Prueba técnica
 
-Entrar dentro de la carpeta "Prueba"
 - Prueba redactada en el archivo adjunto como "TestJava2024.txt"
 - Código dentro de la carpeta "inditex"
 
