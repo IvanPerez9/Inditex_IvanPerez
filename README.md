@@ -46,14 +46,14 @@ File -&gt; Import -&gt; Existing Maven projects -&gt; Seleccionar el proyecto, d
 
 Dentro de eclipse, usar botón derecho 'Run As' o 'Debug As'
 
-![lanzar](https://github.com/IvanPerez9/Inditex_IvanPerez/blob/main/Prueba/Imagenes/Lanzar.PNG)
+![lanzar](https://github.com/IvanPerez9/Inditex_IvanPerez/blob/main/Imagenes/Lanzar.PNG)
 
 ---
 ## Ejecutar los test
 
 Apoyar con el plugin y poder lanzar un 'Coverage as'
 
-![coverage](https://github.com/IvanPerez9/Inditex_IvanPerez/blob/main/Prueba/Imagenes/CoverageLanzar.png)
+![coverage](https://github.com/IvanPerez9/Inditex_IvanPerez/blob/main/Imagenes/CoverageLanzar.png)
 
 También se puede mediante el comando
 
@@ -61,7 +61,7 @@ También se puede mediante el comando
 mvn clean install
 ```
 
-![consola](https://github.com/IvanPerez9/Inditex_IvanPerez/blob/main/Prueba/Imagenes/Test.PNG)
+![consola](https://github.com/IvanPerez9/Inditex_IvanPerez/blob/main/Imagenes/Test.PNG)
 
 ---
 ## Detalles sobre el proyecto
@@ -71,6 +71,6 @@ mvn clean install
 - Se añade un endpoint más, que es un Get All para mostrar la tabla de PRICES al completo. Es totalmente funcional y se le añaden test adicionales.
 
 - Se saca una colección de postman para probar los endpoint no solo con los test. Colección de Postman para realizar las pruebas:
-    -   [Postman](https://github.com/IvanPerez9/Inditex_IvanPerez/tree/main/Prueba/Postman)
+    -   [Postman](https://github.com/IvanPerez9/Inditex_IvanPerez/tree/main/Postman)
 
 - Como patrón, usando springboot está presente la inyección de dependencias. La inyección de las dependencias las hago mediante constructor, ya que es la recomendada para la mayoría de casos, aunque podría haber sido por campo, ya que el ejemplo es básico.
