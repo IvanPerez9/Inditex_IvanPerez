@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "eceb055d-a40a-4280-b5d7-6917299b7419",
+		"name": "Prueba Tecnica - Inditex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?brandId=1&date=2020-06-15 00:00&productId=35455",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "date",
+							"value": "2020-06-15 00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Prices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/prices/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
