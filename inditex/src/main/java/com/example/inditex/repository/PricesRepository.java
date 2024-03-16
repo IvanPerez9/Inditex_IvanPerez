@@ -23,11 +23,10 @@ public interface PricesRepository extends JpaRepository<Prices, Long> {
 	 * @param startDate the start date
 	 * @param endDate the end date
 	 * @param productId the product id
-	 * @param priority the priority
 	 * @return the prices
 	 */
 	Prices findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdAndPriorityOrderByPriorityDesc(
-			Long brandId, LocalDateTime startDate, LocalDateTime endDate, Long productId, Integer priority);
+			Long brandId, LocalDateTime startDate, LocalDateTime endDate, Long productId);
 
 	/**
 	 * Find all.

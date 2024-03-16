@@ -39,7 +39,7 @@ public class PricesServiceImpl implements PricesService {
 	public Prices findPrice(Long brandId, LocalDateTime date, Long productId) {
 		Prices price = pricesRepository
 				.findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdAndPriorityOrderByPriorityDesc(
-						brandId, date, date, productId, 0);
+						brandId, date, date, productId);
 
 		return Optional.ofNullable(price).orElse(null);
 	}
