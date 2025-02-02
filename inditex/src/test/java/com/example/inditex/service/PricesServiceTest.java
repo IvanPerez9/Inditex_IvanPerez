@@ -42,7 +42,7 @@ class PricesServiceTest {
 
 		// when
 		when(pricesRepository
-				.findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdAndPriorityOrderByPriorityDesc(
+				.findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdOrderByPriorityDesc(
 						brandId, date, date, productId))
 				.thenReturn(expectedPrice);
 
@@ -63,7 +63,7 @@ class PricesServiceTest {
 
 		// when
 		when(pricesRepository
-				.findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdAndPriorityOrderByPriorityDesc(
+				.findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdOrderByPriorityDesc(
 						brandId, date, date, productId))
 				.thenReturn(expectedPrice);
 
@@ -83,7 +83,7 @@ class PricesServiceTest {
 
 		// when
 		when(pricesRepository
-				.findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdAndPriorityOrderByPriorityDesc(
+				.findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdOrderByPriorityDesc(
 						brandId, date, date, productId))
 				.thenReturn(null);
 

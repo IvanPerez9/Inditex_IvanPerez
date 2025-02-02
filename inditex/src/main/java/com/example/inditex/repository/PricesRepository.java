@@ -25,7 +25,7 @@ public interface PricesRepository extends JpaRepository<Prices, Long> {
 	 * @param productId the product id
 	 * @return the prices
 	 */
-	Prices findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdAndPriorityOrderByPriorityDesc(
+	Prices findFirstByBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualAndProductIdOrderByPriorityDesc(
 			Long brandId, LocalDateTime startDate, LocalDateTime endDate, Long productId);
 
 	/**
